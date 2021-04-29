@@ -1,10 +1,135 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="icon" href="/imagens/icons/curiculo.png" type="image/jpg">
+    <title>Guilherme Nogueira - Portfólio</title>
 </head>
+
 <body>
-    Hoooo Deuss
+
+    <header style="background-image: url('{% static "imagens/image.png" %}');">
+        <div class="bg">
+
+            <nav>
+                <!--Mobile version-->
+                <ul class="menu-mobile">
+                    <a href="index.html">
+                        <div><img src='{% static "imagens/icons/home.jpg" %}' alt="#"></div>
+                    </a>
+                    <a href="#">
+                        <div><img src='{% static "imagens/icons/premio.gif" %}' alt="#"></div>
+                    </a>
+                    <a href="works.html">
+                        <div><img src='{% static "imagens/icons/work.gif" %}' alt="#"></div>
+                    </a>
+                </ul>
+
+                <!--Desktop Version-->
+                <ul class="menu">
+                    <a href="">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="works.html">
+                        <li>Projetos</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="name">
+                <div class="titulo">
+                    Guilherme S. Nogueira
+                </div>
+                <div class="subtitle">
+                    ANALISTA E DESENVOLVEDOR DE SISTEMAS
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="picture"><img class="profile" src="{% static 'imagens/fotinha.jpg' %}" alt=""></div>
+        <section>
+            <div class="columns">
+                <div class="two-columns">
+                    <div class="first-column">Sobre</div>
+
+
+                    Olá, eu sou o Guilherme e neste site estou disponibilizando uma versão mais criativa do meu currículo feito em HTML / CSS, nele você encontrará detalhes das minhas habilidades e conhecimentos.
+                    <br><br>
+                    Hoje ! Estou me preparando para trabalhar com meu sonho, Programação!
+                    <br><br>
+                    Concluí o curso <a class="text"> técnico em Informática</a> com duração de 2 anos na instituição (SENAC São Miguel Paulista), onde obetive a oportunidade de estudar diversos aspectos como (Redes, Sistemas Operacionais , Cibersegurança e Programação) a partir dessa base logo ingressei no curso superior de <a class="text"> Análise e Desenvolvimento de Sistemas na instituição (IMPACTA)</a>, com graduação prevista para Dezembro de 2021.
+                    <br><br>
+                    Afim de buscar crescimento na areá de desenvolvimento Web adquiri<a
+                        class="text" target="_blank" href="https://programadorbr.com/">(ProgramadorBr disponibilizado por Igor
+                        Oliveira)</a>
+                    a qual está me trazendo o conhecimento necessario para criar esse portifólio, complementando a faculdade
+                    estou realizando por disponibilidade da Cisco Networking Academy uma certificação em pyhton <a
+                        class="text" target="_blank"
+                        href="https://pythoninstitute.org/certification/pcap-certification-associate/">(PCAP
+                        Certification)</a>, que me proporcionou a base em desenvolvimento com Python para realizar projetos maiores.
+
+
+                </div>
+
+                <div class="two-columns">
+                    <div class="social-midia">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5583991222886&amp;text=Ol%C3%A1%2C%20vim%20pelo%20ricardorocker.com"
+                            target="blanck"><img src="{% static 'imagens/icons/whats.png'%}" alt="" width="40"
+                                style="padding-right:20px"></a>
+                        <a target="_blank" class="github" href="https://www.instagram.com/ogu1lhermee/?hl=pt-br" target="blanck"><img
+                                src="{% static 'imagens/icons/insta.png'%}" alt="" width="40" style="padding-right:20px"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/guilherme-santos-nog-1218a4153/" target="blanck"><img
+                                src="{% static 'imagens/icons/linkedin.png'%}" alt="" width="40" style="padding-right:20px"></a>
+                        <a target="_blank" href="https://github.com/" target="blanck"><img src="{% static 'imagens/icons/github.png'%}" alt=""
+                                width="40" style="padding-right:20px"></a>
+                        <a target="_blank" href="https://discord.com/" target="blanck"><img src="{% static 'imagens/icons/discord.png'%}" alt=""
+                                width="40"></a>
+
+                    </div>
+                    Afim de conhecer melhor sobre desenvolvimento Web estou realizando alguns outros cursos de
+                    <br><br>
+                    Criei este site com o intuito de adquirir a experiência necessária para ingressar no ramo de
+                    desenvolvimento também para apresentar um pouco da minha experiencia.
+                    <br><br>
+
+                    Estou disponibilizando no <a class="text" href="#">GITHUB</a> meus próximos trabalhos como forma
+                    de divulgar
+                    meu crecimento na área. Também formata a <a class="text" href="#">página de Projetos</a> onde
+                    será uma opção de facíl acesso aos meus futuros projetos em Pyhton, HTML5 , CSS3 ....
+                    <br><br><br>
+                    <p class="text"># Se Deus é por Nós, Quem Será Contra Nós ?</p>
+                </div>
+
+            </div>
+            <div class='bottom'>
+                <div target="_blank" class="button"><a href="#">BAIXEM MEU CURRÍLO</a></div>
+            </div>
+            <div class="social-mb-lg">
+                <div class="social-mob">
+                    <a href="https://api.whatsapp.com/send?phone=5583991222886&amp;text=Ol%C3%A1%2C%20vim%20pelo%20ricardorocker.com"
+                        target="blanck"><img src="./imagens/icons/whats.png" alt="" width="40"
+                            style="padding-right:20px"></a>
+                    <a class="github" href="https://www.instagram.com/ogu1lhermee/?hl=pt-br" target="blanck"><img
+                            src="./imagens/icons/insta.png" alt="" width="40" style="padding-right:20px"></a>
+                    <a href="https://www.linkedin.com/in/guilherme-santos-nog-1218a4153/" target="blanck"><img
+                            src="./imagens/icons/linkedin.png" alt="" width="40" style="padding-right:20px"></a>
+                    <a href="https://github.com/GuilhermeSantos12?tab=repositories" target="blanck"><img
+                            src="./imagens/icons/github.png" alt="" width="40"></a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copiright">
+                Copiright© por Guilherme S. Nogueira / Desenvolvido HTML/CSS
+            </div>
+        </footer>
+
+    </main>
 </body>
+
 </html>

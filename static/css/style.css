@@ -1,0 +1,452 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+body{
+    z-index: -100;
+    background-color: black;
+
+}
+
+/*Homepage settings*/
+header{
+    background-size: cover;
+    font-size: 25px;
+    letter-spacing: 6.25px;
+    height: 520px;
+
+}
+.bg{
+    background-color: rgba(0,0,0,0.75);
+    z-index: -99;
+    height: 100%;
+    width: 100%;
+}
+nav{
+
+    line-height: 50px;
+
+}
+.menu{
+    text-align: center;
+    padding: 25px;
+}
+.menu a{
+    text-decoration: none;
+    list-style: none;
+}
+.menu li{
+    color: white;
+    display: inline-flex;
+    padding: 10px;
+}
+.name{
+    text-align: center;
+    padding: 32px;
+    padding-bottom: 5%;
+}
+.titulo{
+    padding: 25px;
+    font-size: 78px;
+    font-weight: bold;
+    color: white;
+}
+.subtitle{
+    font-size: 25px;
+    letter-spacing: 6.25px;
+    color: white;
+}
+.picture{
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    margin-left: -158px;
+    top: 355px;
+}
+.picture img{
+    margin: 15px;
+    max-width: 246px;
+}
+.profile{
+    border-radius: 50%;
+    border: 7px solid white;
+}
+.columns{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-align: justify;
+}
+.first-column{
+    text-align: left;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 120px;
+}
+.two-columns{
+    float: left;
+    padding: 17px 5% 40px 5%;
+    text-align: justify;
+    width: 38%;
+    line-height: 1.7;
+}
+section{
+    overflow: hidden;
+    background-color: white;
+}
+.social-midia{
+    padding-right: 20px;
+    text-align: left;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 120px;
+}
+.bottom{
+    width: 92%;
+    padding-top: 5px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 52px;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    display: table;
+    padding: 10px;
+    width: 246px;
+    margin: auto;
+    border: 1px solid black;
+    color: black;
+
+}
+.button a:hover{
+    background-color: none;
+    color: crimson;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.text{
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.copiright{
+    font-size: 13px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: white;
+    text-align: center;
+}
+
+/*  Homepage settings Mobile*/
+.menu-mobile{
+    display: none;
+}
+.social-mob{
+    display: none;
+}
+@media screen and (max-width: 1077px){
+    .titulo{
+        font-size: 49px;
+    }
+}
+@media screen and (max-width: 905px){
+    .social-midia{
+        padding-right: 20px;
+        text-align: left;
+        font-size: 6px;
+        padding-bottom: 21px;
+        padding-top: 134px;
+    }
+
+}
+@media screen and (max-width: 800px ){
+    .menu{
+        display: none;
+        background-color: white;
+    }
+    .social-midia{
+        display: none;
+    }
+    header{
+        height: 420px;
+
+    }
+    nav{
+        padding-bottom: 120px;
+    }
+    .menu-mobile{
+        display: inline-flex;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+
+    }
+    .menu-mobile  a{
+        text-decoration: none;
+        list-style: none;
+        padding: 7px;
+        margin: auto;
+    }
+
+    .titulo{
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 0px;
+        letter-spacing: 0px;
+    }
+    .name{
+        padding: 0px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    .picture{
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        margin-left: -133px;
+        top: 290px;
+    }
+    .picture img{
+        margin: 15px;
+        max-width: 200px;
+    }
+    .two-columns{
+        float: left;
+        padding: 0px 10% 20px 10%;
+        text-align: left;
+        width: 80%;
+        text-align: justify;
+    }
+    .social-mob{
+        display: inline-flex;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .social-mb-lg{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+
+}
+@media screen and (max-width: 283px){
+    .picture{
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        margin-left: -99px;
+        top: 321px;
+    }
+    .picture img{
+        margin: 15px;
+        max-width: 150px;
+    }
+    .first-column {
+        text-align: left;
+        font-size: 27px;
+        padding-bottom: 10px;
+        padding-top: 98px;
+    }
+
+}
+
+
+/* Skills settings */
+.project{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .accordion img{
+    width: 50px;
+    float: left;
+    margin-top: -14px;
+}
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+.columns-skills{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-align: justify;
+    margin-top: 50px;
+}
+.description{
+    width: 84%;
+    padding: 17px 6% 0px 6%;
+    line-height: 1.7;
+    text-align: justify;
+}
+.two-columns-left{
+    float: left;
+    padding: 17px 5% 40px 5%;
+    text-align: justify;
+    width: 38%;
+    line-height: 1.7;
+}
+.two-columns-left img{
+    height: 83px;
+    float: left;
+}
+.two-columns-left p{
+    padding-left: 101px;
+}
+.two-columns-rigth{
+    float: left;
+    padding: 6px 5% 23px 2%;
+    text-align: justify;
+    width: 38%;
+    line-height: 1.7;
+    margin-bottom: 43px;
+}
+.two-columns-rigth img{
+    height: 83px;
+    float: left;
+}
+.two-columns-rigth p{
+    padding-left: 100px;
+}
+.subtitle-skills{
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.bars{
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: crimson;
+}
+.html::before{
+    width: 90%;
+}
+.css::before{
+    width: 70%;
+}
+.js::before{
+    width: 20%;
+}
+.sql::before{
+    width: 65%;
+}
+.python::before{
+    width: 80%;
+}
+
+/*Skills Settings Mobile*/
+@media screen and (max-width: 1200px){
+
+    .two-columns-rigth{
+        float: left;
+        padding: 17px 5% 40px 10%;
+        text-align: justify;
+        width: 80%;
+        line-height: 1.7
+    }
+    .two-columns-left{
+        float: left;
+        padding: 0px 10% 0px 10%;
+        text-align: left;
+        width: 80%;
+        text-align: justify;
+    }
+    .description{
+        width: 84%;
+        padding: 17px 6% 0px 9%;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .accordion img{
+        display: none;
+    }
+    .imagens{
+        height: 83px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 13px;
+    }
+    .two-columns-left img{
+        height: 83px;
+        float: none;
+        display: inline-flex;
+    }
+    .two-columns-rigth img{
+        height: 83px;
+        float: none;
+        display: inline-flex;
+    }
+    .two-columns-left p{
+        padding: 0px;
+    }
+    .two-columns-rigth p{
+        padding: 0px;
+    }
+    .subtitle-skills{
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-bottom: 30px;
+        line-height: 1.3;
+    }
+}
+
+
