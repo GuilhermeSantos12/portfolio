@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="icon" href='{% static "imagens/icons/curiculo.png" %}' type="image/jpg">
+    <link rel="stylesheet" href="{% static 'css/carroseul.css' %}">
+
+    <title>Guilherme Nogueira - Portifólio</title>
+</head>
+
+<body>
+     <header style="background-image: url('{% static "imagens/image.png" %}');">
+        <div class="bg">
+
+            <nav>
+                <!--Mobile version-->
+                <ul class="menu-mobile">
+                    <a href="index.html">
+                        <div><img src="{% static 'imagens/icons/home.gif'%}" alt="@"></div>
+                    </a>
+                    <a href="works.html">
+                        <div><img src="{% static 'imagens/icons/work.gif' %}" alt="@"></div>
+                    </a>
+                </ul>
+
+                <!--Desktop Version-->
+                <ul class="menu">
+                    <a href="/">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="projeto/">
+                        <li>Projeto</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="name">
+                <div class="titulo">
+                    Projetos
+                </div>
+                <div class="subtitle">
+                    Django, Varavel e javascript
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Django_Agenda -->
+    <section>
+        <div class="project">
+            <div class="accordion">Projeto Agenda<img src="{% static 'imagens/icons/django-2-282855.webp'%}" alt="#"></div>
+            <div class="panel">
+                <div class="columns-skills">
+                    <div class="description">
+                        <div class="subtitle-skills">Django_Agenda</div>
+                        A fim de conseguir o conhecimento em Desenvolvimento Web, utilizando as linguagens que já possuo
+                        familharidade, decedi utilizar o Framework Django escrito em Python, neste projeto onde
+                        desenvolvi uma Agenda que disponibiliza a visualização de seus contatos cadastrados
+                        possiblitando ao usuários authenticados a adição, remoção e edição de contatos selecionados,
+                        inicialmente utilizei o SqLite3 para armazenar os dados e construir os models do projeto.
+                        <br><br>
+                        <span><a target="_blank" href="#" target="blanck"><img src="{% static 'imagens/icons/github.png' %}" alt=""
+                            width="40" style="padding-right:20px"></a></span><a class="text" href="#">Estrarei disponiblizando o codigo no Git </a>
+                        <br><br><br>
+                    </div>
+
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img id="ft-car" src="{% static 'imagens/agenda.png'%}" style="width:100%">
+                            <div class="text-slides">Página Principal Agenda</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img id="ft-car" src="{% static 'imagens/ver_contato.png'%}" style="width:100%">
+                            <div class="text-slides">Página De Contatos</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img id="ft-car" src="{% static 'imagens/Cadastro_cliente.png' %}" style="width:100%">
+                            <div class="text-slides">Areá Administrativa Django</div>
+                        </div>
+
+
+
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="project">
+            <div class="accordion">Descrição Do Projeto Senac São Miguel Paulista <img src="{% static 'imagens/icons/senac.svg' %}"
+                    alt="#"></div>
+            <div class="panel">
+                <div class="columns-skills">
+                    <div class="description">
+                        <div class="subtitle-skills">Senac São Miguel Paulista</div>
+                        A proposta do projeto era disponibilizar divulgação, gerenciamento e acessibilidade a um
+                        estabeleciomento. Onde por meio dessa necessidade surgiram 3 saídas a quais foram uma aplicação
+                        Mobile
+                        que disponibilizava os serviços por meio de um App android, Website onde usuarios conseguiam
+                        conhecer o
+                        estabeleciomento e seus serviços oferecidos e por fim a aplicação Desktop que concede ao
+                        dono do estabeleciomento um controle sobre o conteudo das outras duas aplicações.
+
+                        <br><br><br>
+                    </div>
+                    <div class="two-columns-left">
+
+                        <div class="imagens">
+                            <img src="{% static 'imagens/icons/pc.gif' %}" alt="#">
+                        </div>
+                        <p>WebSite - Pensando na forma de divulgar o estabelecimento e seus serviços criamos um WebSite
+                            responsivo, servia como a porta de entreda do local para os clientes, por meio dessa
+                            aplicação
+                            disponibilizavamos serviços oferecidos, imagens da casa, localidade, historia de criação do
+                            local e
+                            davamos orintações para agendamentos de serviços online via Website e App.
+                            Para a criação dessa aplicação utilizamos HTML/CSS (Front-end), com as estruturas prontas
+                            inserimos
+                            o JS que servia como rota de acesso ao banco de dados por meio do Acronomo Json.
+                        </p>
+                        <br><br>
+                        <div class="imagens">
+                            <img src="{% static 'imagens/icons/laptop.svg' %}" alt="#">
+                        </div>
+                        <p>Aplicação Desktop - Pensando no controle das informações disponibilizadas pelas outras
+                            plataformas
+                            decidimos criar um software desktop onde oferece ao usuario a capacidade de gerenciar o que
+                            se
+                            apresentava no site e no aplicativo, ele possui a capacidade de adicionar, alterar ou
+                            modificar
+                            quais quer serviço ou dado que estajam sendo disponibilizado para o conhecimento do cliente.
+                        </p>
+                        <br><br>
+
+                    </div>
+                    <div class="two-columns-rigth">
+
+                        <div class="imagens">
+                            <img src="{% static 'imagens/icons/tablet.svg'%}" alt="">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa iure neque, delectus eveniet
+                            omnis
+                            dolore debitis provident eligendi? Id est nulla impedit minima, commodi voluptatem veniam
+                            laborum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga omnis ex impedit!
+                            Quia
+                            eveniet qui recusandae minima voluptate natus, perspiciatis dolorem ullam eius iure
+                            provident
+                            omnis accusamus laboriosam earum deserunt.
+                            inventore! Temporibus, minus!</p>
+
+
+                        <br>
+
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="line html"></div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <div class="line css"></div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JAVA SCRIPT</span>
+                                <span>20%</span>
+                            </div>
+                        </div>
+                        <div class="line js"></div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>SQL</span>
+                                <span>65%</span>
+                            </div>
+                        </div>
+                        <div class="line sql"></div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>PYTHON</span>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="line python"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="copiright">
+            Copiright© por Guilherme S. Nogueira / Desenvolvido HTML/CSS
+        </div>
+    </footer>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/carousel.js' %}"> </script>
+</body>
+
+
+
+</html>
